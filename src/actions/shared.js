@@ -5,11 +5,6 @@ import { setAuthedUser } from '../actions/authedUser'
 
 const AUTHED_ID = 'dan_abramov'
 
-export function handleAddAnswer(args) {
-  savePollAnswer(args)
-  return (dispatch) => dispatch(addAnswer({args}))
-}
-
 export function handleInitialData() {
   return (dispatch) => {
     return getInitialData()
